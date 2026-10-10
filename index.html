@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d14">
+  <title>GameVault — Play in Your Browser</title>
+  <meta name="description" content="GameVault — a home for browser gaming.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="GameVault home">
+      <span class="brand-mark">G</span><span>GAME<span class="accent">VAULT</span></span>
+    </a>
+    <nav><a href="#games">Games</a><a href="#about">About</a></nav>
+    <a class="top-cta" href="#games">Explore games <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR NEXT SESSION STARTS HERE</div>
+        <h1>Press play.<br><span>Enter another world.</span></h1>
+        <p>A growing collection of games, built for the browser. Pick a game, launch it, and get playing.</p>
+        <a class="primary-btn" href="#games">Explore the library <span>→</span></a>
+        <div class="hero-meta"><span>⌘</span> PC-friendly <i></i><span>◉</span> Browser gaming</div>
+      </div>
+      <div class="hero-art" aria-label="Abstract gaming artwork">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="art-grid"></div>
+        <div class="art-core"><div class="core-inner">GV</div></div>
+        <div class="floating-tag tag-top">GAME / 001</div>
+        <div class="floating-tag tag-bottom"><span class="live-dot"></span> READY WHEN YOU ARE</div>
+      </div>
+    </section>
+
+    <section class="library" id="games">
+      <div class="section-head">
+        <div><div class="eyebrow">THE COLLECTION</div><h2>Choose your game<span class="accent">.</span></h2></div>
+        <span class="count">01 TITLE · MORE COMING</span>
+      </div>
+      <article class="game-card">
+        <div class="game-art">
+          <div class="city-sun"></div><div class="city city-back"></div><div class="city city-front"></div>
+          <div class="road"></div><div class="car-shape"><span></span></div>
+          <div class="art-label">OPEN WORLD / ACTION</div>
+          <div class="art-number">001</div>
+        </div>
+        <div class="game-info">
+          <div class="game-topline"><span class="game-type">FEATURED GAME</span><span class="status"><i></i> LOCAL BUILD WORKS</span></div>
+          <h3>Your game</h3>
+          <p>Your local browser build is working. Online play is not connected yet; this card is ready for the hosted game URL when available.</p>
+          <div class="game-footer">
+            <span class="platforms"><b>PC</b><b>WEB</b></span>
+            <button class="play-btn" id="play-button" type="button">Play game <span>↗</span></button>
+          </div>
+          <p class="notice" id="play-notice" role="status">Online game hosting hasn't been configured yet.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-icon">✳</div>
+      <div><div class="eyebrow">BUILT FOR PLAY</div><h2>One library. <span class="accent">More adventures.</span></h2>
+      <p>GameVault is your new browser-gaming home. The website can be hosted on GitHub Pages; games that need a runtime or large assets may need separate hosting.</p></div>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="./"><span class="brand-mark">G</span><span>GAME<span class="accent">VAULT</span></span></a><span>© <span id="year"></span> GameVault · Made for players</span><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
